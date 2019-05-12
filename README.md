@@ -1,4 +1,4 @@
-# revere-proxy
+# reverse-proxy
 
 > This is part of the ["standard development environment" example ](https://github.com/hal313/standard-development-environment-example). See that page for more information.
 
