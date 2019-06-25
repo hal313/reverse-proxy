@@ -19,6 +19,33 @@
                 <li><a href="/ide/" target="ide">IDE (Visual Studio Code)</a></li>
                 <li><a href="/apps/" target="app">Preview Application</a></li>
             </ul>
+
+            <div>
+                <!-- // ngrok tips -->
+                <div class="alert alert-primary" role="alert">
+                    <h4 class="alert-heading">Using <a href="https://ngrok.com/" target="_blank">ngrok</a></h4>
+                    The tool "ngrok" can be used to test mobile or remote devices against the local machines by tunneling traffic. Once
+                    downloaded, simply run the executable (passing in the port):
+<pre><code>
+    ## Run against the local dev-env instance:
+    ngrok http 10080
+</code></pre>
+                </div>
+
+                <!-- // browser-sync tips -->
+                <div class="alert alert-primary" role="alert">
+                    <h4 class="alert-heading">Using <a href="https://www.browsersync.io/" target="_blank">browser-sync</a></h4>
+                    The "browser-sync" tool allows multiple browsers to react to one set of inputs; this is ideal for testing across
+                    multiple browsers at the same time.
+<pre><code>
+    ## Install:
+    npm install -g browser-sync
+
+    ## Run against the local dev-env instance:
+    browser-sync start --proxy localhost:10080 --files html-01/app/*
+</code></pre>
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
